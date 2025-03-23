@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        urbanist: [ 'sans-serif'],
+      },
+      lineHeight: {
+        'custom': '29.8px', // Custom line height
+      },
+    },
+  },
+  plugins: [],
+}
+
