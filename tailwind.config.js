@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        urbanist: [ 'sans-serif'],
+        urbanist: ['Times New Roman',  'sans-serif'],
       },
       lineHeight: {
         'custom': '29.8px', // Custom line height
