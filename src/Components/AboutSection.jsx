@@ -21,7 +21,7 @@ const AboutSection = () => {
 
       {/* Text Section */}
       <motion.div 
-        className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-0"
+        className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-0 px-4 md:px-0" // Added padding for mobile
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -54,34 +54,34 @@ const AboutSection = () => {
         </p>
       </motion.div>
 
-      {/* Scroll Down Animation */}
-      <div className="md:absolute hidden -bottom-[50px] w-full overflow-hidden  py-10">
-      <motion.div
-        className="flex whitespace-nowrap"
-        animate={{
-          x: ["0%", "-100%"], // Moves continuously from 0% to -100%
-        }}
-        transition={{
-          ease: "linear",
-          duration: 12, // Adjust speed as needed
-          repeat: Infinity,
-        }}
-      >
-        {/* Duplicating content for seamless looping */}
-        {[...Array(10)].map((_, index) => (
-          <p
-            key={index}
-            className="text-[100px] md:text-[130px] font-bold text-transparent text-center px-10"
-            style={{
-              WebkitTextStroke: "1px #000000",
-              letterSpacing: "2px",
-            }}
-          >
-            SCROLL DOWN
-          </p>
-        ))}
-      </motion.div>
-    </div>
+      {/* Scroll Down Animation (Visible Only on Tablets and Desktop) */}
+      <div className="absolute font-sans -bottom-[10px] w-full overflow-hidden py-10 hidden md:block">
+        <motion.div
+          className="flex whitespace-nowrap"
+          animate={{
+            x: ["0%", "-100%"], // Moves continuously from 0% to -100%
+          }}
+          transition={{
+            ease: "linear",
+            duration: 12, // Adjust speed as needed
+            repeat: Infinity,
+          }}
+        >
+          {/* Duplicating content for seamless looping */}
+          {[...Array(10)].map((_, index) => (
+            <p
+              key={index}
+              className="text-[100px] md:text-[130px] font-bold text-transparent text-center px-10"
+              style={{
+                WebkitTextStroke: "1px #000000",
+                letterSpacing: "2px",
+              }}
+            >
+              SCROLL DOWN
+            </p>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };
