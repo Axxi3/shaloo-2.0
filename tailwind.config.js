@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         urbanist: ['Times New Roman',  'sans-serif'],
+        new: ['Urbanist',  'sans-serif'],
       },
       lineHeight: {
         'custom': '29.8px', // Custom line height
