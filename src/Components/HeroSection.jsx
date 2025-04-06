@@ -30,22 +30,22 @@ export default function HeroSection() {
           className="mb-4 text-base uppercase tracking-[6.4px] max-sm:text-sm max-sm:tracking-[4px]"
           variants={itemVariants}
         >
-          INTEGRITY TRUST SOLUTIONS
+          VAIBHAV SETIYA 
+
         </motion.h2>
 
         <motion.h1
           className="mb-4 text-6xl uppercase leading-[75px] max-md:text-5xl max-md:leading-[60px] max-sm:text-4xl max-sm:leading-10"
           variants={itemVariants}
         >
-          LOREM IPSUM HERE &amp; THERE
+         Built on Trust. Driven by Purpose. Rooted in Values
         </motion.h1>
 
         <motion.p
           className="mb-4 max-w-screen-md text-xl tracking-wider leading-8 lowercase opacity-60 max-md:text-lg max-md:leading-7 max-md:max-w-[600px] max-sm:max-w-full max-sm:text-base max-sm:leading-6"
           variants={itemVariants}
         >
-          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          More than a real estate advisor — a father, a guide, and a partner in your journey. Vaibhav brings clarity, care, and compassion to every decision you make.
         </motion.p>
 
       
