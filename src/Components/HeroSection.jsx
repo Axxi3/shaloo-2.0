@@ -20,13 +20,14 @@ export default function HeroSection() {
 
   return (
     <section className="sticky top-0 left-0 w-full h-screen flex justify-center items-center px-5 py-10 bg-[url('/bg.jpg')] bg-cover bg-center z-0">
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
-      <motion.div
-        className="flex flex-col items-center px-5 py-10 text-center text-white max-w-[1200px]"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
+     <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+
+     <motion.div
+  className="relative z-20 flex flex-col items-center px-5 py-10 text-center text-white max-w-[1200px]"
+  variants={containerVariants}
+  initial="hidden"
+  animate="show"
+>
         <motion.h2
           className="mb-4 text-base uppercase tracking-[6.4px] max-sm:text-sm max-sm:tracking-[4px]"
           variants={itemVariants}
