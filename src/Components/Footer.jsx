@@ -36,12 +36,12 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-sm text-gray-400 mb-4 md:mb-0">
           <a
-  href="https://api.whatsapp.com/send?phone=916000831966&text=Hey%20i%20saw%20buzzspear%20website%2C%20I%20am%20looking%20for%20something%20similar.%20Can%20we%20discuss%3F" // Replace with the actual URL
-  target="_blank"
+  href="" // Replace with the actual URL
+ 
   rel="noopener noreferrer"
   className="mt-6 sm:mt-4 text-yellow-400 hover:underline" // Added styling
 >
-  Made with <span className="text-red-500">❤️</span> by Anurag
+  
 </a>
           </div>
           
